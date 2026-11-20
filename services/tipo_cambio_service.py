@@ -1,4 +1,5 @@
 """Consumo de la API de tipo de cambio (open.er-api.com, sin llave) y cálculo de pagos internacionales."""
+"""Usando API de ExchangeRate"""
 import logging
 import math
 from dataclasses import dataclass
