@@ -25,5 +25,7 @@ Funciones principales
    1. No considera el viento (aunque la API lo entrega).
    2. Es el clima actual, no un pronóstico.
 
-4. IA: por ahora estoy usando como apoyo a Claude de Anthropic, pero más adelante utilizaré otras como Gemini o Chat GPT, para comprobar si mi código esta bien estrucutrado o para probar otras soluciones.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+IA: por ahora estoy usando como apoyo a Claude de Anthropic, pero más adelante utilizaré otras herramientas de IA como Gemini o Chat GPT, para comprobar si mi código esta bien estructurado o para probar otras soluciones.
 
