@@ -1,9 +1,9 @@
 from config.base_datos import ConexionBD
 from excepciones.excepciones import RegistroNoEncontradoError, ValidacionError
 from models.proyecto import Proyecto
-from models.entidadbase_dao import RepositorioBase
+from models.entidadbase_dao import EntidadBaseDAO
 
-class ProyectoDAO(RepositorioBase):
+class ProyectoDAO(EntidadBaseDAO):
     _NOMBRE_ENTIDAD = "Proyecto"
 
     def _a_objeto(self, fila):

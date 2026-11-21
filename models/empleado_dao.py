@@ -3,9 +3,9 @@ from abc import ABC, abstractmethod
 from config.base_datos import ConexionBD
 from excepciones.excepciones import RegistroNoEncontradoError, ValidacionError
 from models.empleado import Empleado
-from models.entidadbase_dao import RepositorioBase
+from models.entidadbase_dao import EntidadBaseDAO
 
-class EmpleadoDAO(RepositorioBase):
+class EmpleadoDAO(EntidadBaseDAO):
     _NOMBRE_ENTIDAD = "Empleado"
 
     @staticmethod

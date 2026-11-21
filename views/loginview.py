@@ -1,12 +1,18 @@
 """Flujo de acceso por consola: primer uso (crear administrador) e inicio de sesión."""
 from getpass import getpass
+import sys
 
 from excepciones.excepciones import ErrorAutenticacion, ErrorBaseDatos, ValidacionError
 from seguridad.autenticacion import ServicioAutenticacion
 
 
 def _leer(texto, secreto=False):
-    return getpass(texto) if secreto else input(texto)      # getpass: la clave no se muestra en pantalla
+    if not secreto:
+        return input(texto)
+    if sys.stdin.isatty():
+        return getpass(texto)          # terminal real: la clave no se muestra
+    print("  (Aviso: este entorno no puede ocultar la contraseña; se verá al escribir)")
+    return input(texto)
 
 
 def _crear_primer_usuario(auth: ServicioAutenticacion):

@@ -1,9 +1,9 @@
 from config.base_datos import ConexionBD
 from excepciones.excepciones import RegistroNoEncontradoError, ValidacionError
 from models.departamento import Departamento
-from models.entidadbase_dao import RepositorioBase
+from models.entidadbase_dao import EntidadBaseDAO
 
-class DepartamentoDAO(RepositorioBase):
+class DepartamentoDAO(EntidadBaseDAO):
     _NOMBRE_ENTIDAD = "Departamento"
 
     @staticmethod

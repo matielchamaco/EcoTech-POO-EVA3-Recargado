@@ -7,7 +7,7 @@ from models.departamento import Departamento
 from models.proyecto import Proyecto
 from models.registrotiempo import RegistroTiempo
 
-class RepositorioBase(ABC):
+class EntidadBaseDAO(ABC):
     _NOMBRE_ENTIDAD = "Registro"
 
     def __init__(self, conexion: ConexionBD):

@@ -1,9 +1,9 @@
 from config.base_datos import ConexionBD
 from excepciones.excepciones import RegistroNoEncontradoError, ValidacionError
 from models.registrotiempo import RegistroTiempo
-from models.entidadbase_dao import RepositorioBase
+from models.entidadbase_dao import EntidadBaseDAO
 
-class RegistroTiempoDAO(RepositorioBase):
+class RegistroTiempoDAO(EntidadBaseDAO):
     _NOMBRE_ENTIDAD = "Registro de tiempo"
 
     @staticmethod
