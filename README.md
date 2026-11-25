@@ -12,7 +12,7 @@ Funciones principales
    2. En el primer uso el programa te pide crear el usuario administrador.
    3. Los servicios exigen sesión autenticada antes de hacer cualquier cosa, y la sesión expira a los 15 minutos de inactividad.
    4. La ciudad, la moneda, el usuario y la contraseña se validan con listas blancas.
-   5. La llave de la API va en .env, que no se sube al repositoria; se incluye .env.example como plantilla.
+   5. La llave de la API va en .env, que no se sube al repositorio; se incluye .env.example como plantilla.
 
 2. Pagos Internacionales: esta opcion funciona mediante ServicioTipoCambio en services/tipo_cambio_service.py, utilizando ExchangeRate-API para convertir salarios almacenados en pesos chilenos a otras monedas.
 
